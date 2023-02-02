@@ -131,6 +131,48 @@ Save the file and run these commands:
 
     dotnet build
 
-    dotnet run
+    dotnet run --"WRITE YOUR QUESTION HERE."
 
 A JSON object will be returned.
+
+After that, update the code
+
+    using System.Text;
+    using Newtonsoft.Json;
+
+    if (args.Length > 0) // here to receive arguments
+    {
+        // Create request obj
+        HttpClient client = new HttpClient();
+
+        // Add Header
+        client.DefaultRequestHeaders.Add("authorization", "Bearer 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");
+
+        // Create content
+        var content = new StringContent("{\"model\": \"text-davinci-003\", \"prompt\": \"" + args[0] + "\",\"temperature\": 1, \"max_tokens\": 100}",
+            Encoding.UTF8, "application/json");
+
+        // Get response through endpoint by passing content
+        HttpResponseMessage response = await client.PostAsync("https://api.openai.com/v1/completions", content);
+
+        // Wait for response
+        string responseString = await response.Content.ReadAsStringAsync();
+
+        try
+        {
+            // Deserialise Data
+            var dyData = JsonConvert.DeserializeObject<dynamic>(responseString);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"---> API response is: {dyData!.choices[0].text}");
+            Console.ResetColor();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"---> Could not deserialise the JSON: {ex.Message}");
+        }
+    }
+    else
+    {
+        Console.WriteLine("---> You need to provide some input.");
+    }
