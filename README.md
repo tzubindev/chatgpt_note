@@ -82,7 +82,7 @@ After opening the VS Code, a message will be prompted on the right bottom. Click
 
 To open terminal, press
 
-**CTRL + ~**.
+`CTRL + ~`
 
 Then
 
