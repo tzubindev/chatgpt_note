@@ -207,7 +207,7 @@ Press New and type in the repo path.
 
 ![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env3.png?raw=true)
 
-Finally refresh the terminal OR open another new command prompt and type:
+Finally, refresh the terminal OR open another new command prompt and type:
 
     ask "TYPE YOUR QUESTION HERE"
 
