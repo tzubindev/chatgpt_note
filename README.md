@@ -80,9 +80,7 @@ After opening the VS Code, a message will be prompted on the right bottom. Click
 
 ### Add Packages
 
-To open terminal, press
-
-`CTRL + ~`
+To open terminal, press `CTRL + ~`
 
 Then
 
@@ -176,3 +174,21 @@ After that, update the code
     {
         Console.WriteLine("---> You need to provide some input.");
     }
+
+Update property group in csproj:
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlubishReadyToRun>true</PlubishReadyToRun>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+Then run this code to publish app to the current repo: (for window user)
+
+    dotnet publish -r win-x64
