@@ -1,5 +1,14 @@
 # ChatGPT Note
 
+Before starting the project:
+
+1. Go to https://openai.com/api/
+2. Log In
+3. Click on "Personal"
+4. Click on "View API Keys"
+5. Click on "+ Create new secret key"
+6. Keep your api key
+
 ## Check dotnet version
 
 Version 6.0 and above would be fine.
@@ -69,7 +78,7 @@ After opening the VS Code, a message will be prompted on the right bottom. Click
 
 ![Prompted message](https://github.com/tzubindev/chatgpt/blob/main/resource/prompted_message.png?raw=true)
 
-### Add Newtonsoft.Json
+### Add Packages
 
 To open terminal:
 
@@ -82,3 +91,7 @@ Then
 The csproj file should be updated:
 
 ![Add package](https://github.com/tzubindev/chatgpt/blob/main/resource/add_package_newtonsoftjson.png?raw=true)
+
+Also adding TextCopy package
+
+    dotnet add package TextCopy
