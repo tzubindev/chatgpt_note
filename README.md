@@ -80,7 +80,7 @@ After opening the VS Code, a message will be prompted on the right bottom. Click
 
 ### Add Packages
 
-To open terminal:
+To open terminal, press
 
     ctrl + ~
 
@@ -95,3 +95,42 @@ The csproj file should be updated:
 Also adding TextCopy package
 
     dotnet add package TextCopy
+
+### Code in Program.cs
+
+Code these in the file:
+
+    using System.Text;
+
+    if (args.Length > 0) // here to receive arguments
+    {
+        // Create request obj
+        HttpClient client = new HttpClient();
+
+        // Add Header
+        client.DefaultRequestHeaders.Add("authorization", "Bearer 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");
+
+        // Create content
+        var content = new StringContent("{\"model\": \"text-davinci-001\", \"prompt\": \"" + args[0] + "\",\"temperature\": 1, \"max_tokens\": 100}",
+            Encoding.UTF8, "application/json");
+
+        // Get response through endpoint by passing content
+        HttpResponseMessage response = await client.PostAsync("https://api.openai.com/v1/completions", content);
+
+        // Wait for response
+        string responseString = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine(responseString);
+    }
+    else
+    {
+        Console.WriteLine("---> You need to provide some input.");
+    }
+
+Save the file and run these commands:
+
+    dotnet build
+
+    dotnet run
+
+A JSON object will be returned.
