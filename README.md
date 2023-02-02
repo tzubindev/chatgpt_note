@@ -200,7 +200,11 @@ Copy and paste the application from the `/bin/Debug/YOUR_DOTNET_VERSION/win-x64/
 However, you need to get the full path of the repository which has the application file and add to:
 
 ![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env1.png?raw=true)
+
 ![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env2.png?raw=true)
+
+Press New and type in the repo path.
+
 ![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env3.png?raw=true)
 
 Finally refresh the terminal OR open another new command prompt and type:
