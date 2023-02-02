@@ -67,4 +67,4 @@ Open in VS Code:
 
 After opening the VS Code, a message will be prompted on the right bottom.
 
-!Prompted message(https://github.com/tzubindev/chatgpt/blob/main/resource/prompted_message.png)
+![Prompted message](https://github.com/tzubindev/chatgpt/blob/main/resource/prompted_message.png?raw=true)
