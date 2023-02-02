@@ -65,6 +65,20 @@ Open in VS Code:
 
 ## Code in VS Code
 
-After opening the VS Code, a message will be prompted on the right bottom.
+After opening the VS Code, a message will be prompted on the right bottom. Click on "yes".
 
 ![Prompted message](https://github.com/tzubindev/chatgpt/blob/main/resource/prompted_message.png?raw=true)
+
+### Add Newtonsoft.Json
+
+To open terminal:
+
+    ctrl + ~
+
+Then
+
+    dotnet add package Newtonsoft.Json
+
+The csproj file should be updated:
+
+![Add package](https://github.com/tzubindev/chatgpt/blob/main/resource/add_package_newtonsoftjson.png?raw=true)
