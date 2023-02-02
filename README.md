@@ -80,7 +80,7 @@ After opening the VS Code, a message will be prompted on the right bottom. Click
 
 ### Add Packages
 
-To open terminal, press **CTRL + ~**
+To open terminal, press **CTRL + ~**.
 
 Then
 
