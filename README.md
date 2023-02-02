@@ -43,10 +43,18 @@ The following output:
 
 ## Check what's in the repo
 
-To move to the repo
+To move to the repo:
 
     cd ask
 
-To list all items
+To list all items:
 
     ls
+
+The following output:
+
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    d-----        02/02/2023     09:27                obj
+    -a----        02/02/2023     09:27            249 ask.csproj
+    -a----        02/02/2023     09:27            105 Program.cs
