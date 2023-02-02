@@ -6,7 +6,7 @@ Version 6.0 and above would be fine.
 
     dotnet --version
 
-## Create template "Console App"
+## Create template Console App "ask"
 
     dotnet new console -n ask
 
@@ -40,3 +40,13 @@ The following output:
     Determining projects to restore...
     Restored C:\Users\devtb\S7E1\ask\ask.csproj (in 58 ms).
     Restore succeeded.
+
+## Check what's in the repo
+
+To move to the repo
+
+    cd ask
+
+To list all items
+
+    ls
