@@ -192,3 +192,19 @@ Update property group in csproj:
 Then run this code to publish app to the current repo: (for window user)
 
     dotnet publish -r win-x64
+
+Copy and paste the application from the `/bin/Debug/YOUR_DOTNET_VERSION/win-x64/publish/ ` to somewhere you like.
+
+![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/publish_app.png?raw=true)
+
+However, you need to get the full path of the repository which has the application file and add to:
+
+![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env1.png?raw=true)
+![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env2.png?raw=true)
+![Add Env Path](https://github.com/tzubindev/chatgpt/blob/main/resource/env3.png?raw=true)
+
+Finally refresh the terminal OR open another new command prompt and type:
+
+    ask "TYPE YOUR QUESTION HERE"
+
+The application should be working fine.
