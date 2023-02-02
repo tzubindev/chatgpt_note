@@ -106,7 +106,7 @@ Code these in the file:
         HttpClient client = new HttpClient();
 
         // Add Header
-        client.DefaultRequestHeaders.Add("authorization", "Bearer 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");
+        client.DefaultRequestHeaders.Add("authorization", "Bearer YOUR_API_KEY");
 
         // Create content
         var content = new StringContent("{\"model\": \"text-davinci-001\", \"prompt\": \"" + args[0] + "\",\"temperature\": 1, \"max_tokens\": 100}",
@@ -144,7 +144,7 @@ After that, update the code
         HttpClient client = new HttpClient();
 
         // Add Header
-        client.DefaultRequestHeaders.Add("authorization", "Bearer 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");
+        client.DefaultRequestHeaders.Add("authorization", "Bearer YOUR_API_KEY");
 
         // Create content
         var content = new StringContent("{\"model\": \"text-davinci-003\", \"prompt\": \"" + args[0] + "\",\"temperature\": 1, \"max_tokens\": 100}",
