@@ -58,3 +58,13 @@ The following output:
     d-----        02/02/2023     09:27                obj
     -a----        02/02/2023     09:27            249 ask.csproj
     -a----        02/02/2023     09:27            105 Program.cs
+
+Open in VS Code:
+
+    code .
+
+## Code in VS Code
+
+After opening the VS Code, a message will be prompted on the right bottom.
+
+!Prompted message(https://github.com/tzubindev/chatgpt/blob/main/resource/prompted_message.png?raw=true)
